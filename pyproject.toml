@@ -1,0 +1,49 @@
+# SPDX-FileCopyrightText: Copyright (c) 2023 Jose D. Montoya
+#
+# SPDX-License-Identifier: MIT
+
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "micropython-bmi160"
+description = "MicroPython Driver for the Bosch BMI160 Acc/Gyro Sensor"
+version = "0.0.0+auto.0"
+readme = "README.rst"
+authors = [
+    {name = "JDM", email = "xxyx@mailmeto.mozmail.com"}
+]
+urls = {Homepage = "https://github.com/jposada202020/MicroPython_BMI160"}
+keywords = [
+    "sensor",
+    "micropython",
+    "bmi160",
+    "gyro",
+    "acceleration",
+    "accelerometer",
+    "temperature",
+    "vector",
+    "gravity",
+    "micropython",
+    "rotation",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+py-modules = ["bmi160"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}

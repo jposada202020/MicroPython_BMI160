@@ -21,6 +21,36 @@ Introduction
 
 MicroPython Driver for the Bosch BMI160 Acc/Gyro Sensor
 
+Installing with mip
+====================
+
+To install using mpremote
+
+.. code-block:: shell
+
+    mpremote mip install github:jposada202020/MicroPython_BMI160
+
+To install directly using a WIFI capable board
+
+.. code-block:: shell
+
+    mip install github:jposada202020/MicroPython_BMI160
+
+
+Installing Library Examples
+============================
+
+If you want to install library examples:
+
+.. code-block:: shell
+
+    mpremote mip install github:jposada202020/MicroPython_BMI160/examples.json
+
+To install directly using a WIFI capable board
+
+.. code-block:: shell
+
+    mip install github:jposada202020/MicroPython_BMI160/examples.json
 
 
 Installing from PyPI
@@ -58,4 +88,3 @@ Take a look at the examples directory
 Documentation
 =============
 API documentation for this library can be found on `Read the Docs <https://micropython-bmi160.readthedocs.io/en/latest/>`_.
-

@@ -1,0 +1,12 @@
+{
+  "urls": [
+    ["micropython_bmi160/examples/bmi160_gyro_range.py", "github:jposada202020/MicroPython_BMI160/examples/bmi160_gyro_range.py"],
+    ["micropython_bmi160/examples/bmi160_temperature.py", "github:jposada202020/MicroPython_BMI160/examples/bmi160_temperature.py"],
+    ["micropython_bmi160/examples/bmi160_gyro_datarate.py", "github:jposada202020/MicroPython_BMI160/examples/bmi160_gyro_datarate.py"],
+    ["micropython_bmi160/examples/bmi160_simpletest.py", "github:jposada202020/MicroPython_BMI160/examples/bmi160_simpletest.py"],
+    ["micropython_bmi160/examples/bmi160_acce_datarange.py", "github:jposada202020/MicroPython_BMI160/examples/bmi160_acce_datarange.py"],
+    ["micropython_bmi160/examples/bmi160_gyro_simpletest.py", "github:jposada202020/MicroPython_BMI160/examples/bmi160_gyro_simpletest.py"],
+    ["micropython_bmi160/examples/bmi160_acc_datarate.py", "github:jposada202020/MicroPython_BMI160/examples/bmi160_acc_datarate.py"]
+  ],
+  "version": "0.1"
+}

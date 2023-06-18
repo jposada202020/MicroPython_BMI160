@@ -160,13 +160,13 @@ class BMI160:
     .. code-block:: python
 
         from machine import Pin, I2C
-        import bmi160
+        from micropython_bmi160 import bmi160
 
     Once this is done you can define your `machine.I2C` object and define your sensor object
 
     .. code-block:: python
 
-        i2c = I2C(sda=Pin(2), scl=Pin(3))
+        i2c = I2C(1, sda=Pin(2), scl=Pin(3))
         bmi160 = bmi160.BMI160(i2c)
 
     Now you have access to the attributes

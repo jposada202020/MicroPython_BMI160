@@ -43,7 +43,7 @@ classifiers = [
 dynamic = ["dependencies", "optional-dependencies"]
 
 [tool.setuptools]
-py-modules = ["bmi160"]
+packages = ["micropython_bmi160"]
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements.txt"]}

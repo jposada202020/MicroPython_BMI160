@@ -10,5 +10,5 @@ i2c = I2C(1, sda=Pin(2), scl=Pin(3))  # Correct I2C pins for RP2040
 bmi = bmi160.BMI160(i2c)
 
 while True:
-    print("Temperature {:.2f}°C".format(bmi.temperature))
+    print(f"Temperature {bmi.temperature:.2f}°C")
     time.sleep(0.5)

@@ -16,6 +16,6 @@ while True:
         print("Current Acceleration Data Rate: ", bmi.acceleration_output_data_rate)
         for _ in range(10):
             accx, accy, accz = bmi.acceleration
-            print("x:{:.2f}m/s2, y:{:.2f}m/s2, z{:.2f}m/s2".format(accx, accy, accz))
+            print(f"x:{accx:.2f}m/s2, y:{accy:.2f}m/s2, z{accz:.2f}m/s2")
             time.sleep(0.5)
         bmi.acceleration_output_data_rate = data_rate

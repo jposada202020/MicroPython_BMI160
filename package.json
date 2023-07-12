@@ -1,8 +1,17 @@
 {
   "urls": [
-    ["micropython_bmi160/bmi160.py", "github:jposada202020/MicroPython_BMI160/micropython_bmi160/bmi160.py"],
-    ["micropython_bmi160/i2c_helpers.py", "github:jposada202020/MicroPython_BMI160/micropython_bmi160/i2c_helpers.py"],
-    ["micropython_bmi160/__init__.py", "github:jposada202020/MicroPython_BMI160/micropython_bmi160/__init__.py"]
+    [
+      "micropython_bmi160/bmi160.py",
+      "github:jposada202020/MicroPython_BMI160/micropython_bmi160/bmi160.py"
+    ],
+    [
+      "micropython_bmi160/i2c_helpers.py",
+      "github:jposada202020/MicroPython_BMI160/micropython_bmi160/i2c_helpers.py"
+    ],
+    [
+      "micropython_bmi160/__init__.py",
+      "github:jposada202020/MicroPython_BMI160/micropython_bmi160/__init__.py"
+    ]
   ],
-  "version": "0.1"
+  "version": "1"
 }

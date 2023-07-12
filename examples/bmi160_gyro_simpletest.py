@@ -11,5 +11,5 @@ bmi = bmi160.BMI160(i2c)
 
 while True:
     gyrox, gyroy, gyroz = bmi.gyro
-    print("x:{:.2f}°/s, y:{:.2f}°/s, z{:.2f}°/s".format(gyrox, gyroy, gyroz))
+    print(f"x:{gyrox:.2f}°/s, y:{gyroy:.2f}°/s, z{gyroz:.2f}°/s")
     time.sleep(0.5)

@@ -141,6 +141,8 @@ gyro_values = (
     GYRO_RANGE_2000,
 )
 
+_ACC_CONVERSION = const(9.80665)
+
 # pylint: disable= invalid-name
 
 
@@ -295,8 +297,8 @@ class BMI160:
     def acceleration_undersample(self) -> str:
         """
         The undersampling parameter is typically used in low power mode.
-        When acc_us is set to ‘0’ and the accelerometer is in low-power mode,
-        it will change to normal mode. If the acc_us is set to ‘0’ and a
+        When acc_us is set to '0' and the accelerometer is in low-power mode,
+        it will change to normal mode. If the acc_us is set to '0' and a
         command to enter low-power mode is sent to the Register (0x7E) CMD,
         this command is ignored.
 
@@ -447,7 +449,7 @@ class BMI160:
         Sensor Acceleration
         """
 
-        factor = self.acceleration_scale[self.acceleration_range]
+        factor = self.acceleration_scale[self.acceleration_range] * _ACC_CONVERSION
 
         x = self._acc_data_x / factor
         y = self._acc_data_y / factor

@@ -449,7 +449,7 @@ class BMI160:
         Sensor Acceleration
         """
 
-        factor = self.acceleration_scale[self.acceleration_range] * _ACC_CONVERSION
+        factor = self.acceleration_scale[self.acceleration_range] / _ACC_CONVERSION
 
         x = self._acc_data_x / factor
         y = self._acc_data_y / factor
